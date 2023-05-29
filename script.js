@@ -33,14 +33,6 @@ const projectListJSON = [
     },
 ]
 
-function fillDropdown(){
-    let projectMenu = ""
-    for (i=0; i < projectListJSON.length; i++){
-        projectMenu +=`<li><a class="nav-link active" href="${projectListJSON[i].link}">${projectListJSON[i].name}</a></li>`;
-    }
-    document.getElementById('dropProjects').innerHTML += projectList;
-}
-
 function fillProjects(){
     let projectList = ""
     for (i=0; i < projectListJSON.length; i++){
