@@ -2,7 +2,7 @@
     {
         name: "PacMen",
         type: "Course",
-        description: "",
+        description: "An unlimited number of animated PacMen chase each other around the window.<br>Uses the DOM and arrays to iterate through all objects created by the user, updating positions and identifying when each image is about to exceed the space of the window.",
         link: "./pages/pacman/index.html",
         repoLink: "https://github.com/andrewbeyea/PacMen",
         thumbnail: "./images/pacmen.jpg",
@@ -10,9 +10,9 @@
     {
         name: "Eyes",
         type: "Course",
-        description: "A pair of eyes track the mouse pointer around your screen.",
+        description: "A pair of eyes track the mouse pointer around your screen.<br>",
         link: "./pages/eyes/index.html",
-        repoLink: "https://github.com/andrewbeyea/PacMen",
+        repoLink: "https://github.com/andrewbeyea/Eye-Exercise",
         thumbnail: "./images/eyes.jpg",
     },
     {

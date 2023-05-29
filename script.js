@@ -1,24 +1,24 @@
-const projectList = [
+const projectListJSON = [
     {
         name: "PacMen",
         type: "Course",
-        description: "",
-        link: "./pages/pacmen/index.html",
+        description: "An unlimited number of animated PacMen chase each other around the window.<br>Uses the DOM and arrays to iterate through all objects created by the user, updating positions and reversing the direction and animation when each image is about to exceed the space of the window.",
+        link: "./pages/pacman/index.html",
         repoLink: "https://github.com/andrewbeyea/PacMen",
         thumbnail: "./images/pacmen.jpg",
     },
     {
         name: "Eyes",
         type: "Course",
-        description: "A pair of eyes track the mouse pointer around your screen.",
+        description: "A pair of eyes track the mouse pointer around your screen.<br>Uses the Event Listener to track inputs from the mouse and translates the mouse position to an offset of the pupils.",
         link: "./pages/eyes/eyes.html",
-        repoLink: "https://github.com/andrewbeyea/eyes",
+        repoLink: "https://github.com/andrewbeyea/eye-exercise",
         thumbnail: "./images/eyes.jpg",
     },
     {
         name: "Real-Time Bus Tracker",
         type: "Course",
-        description: "Shows the position of trains on Boston's Red Line T",
+        description: "Shows the position of trains on Boston's Red Line T.<br>Uses the MBTA API to extract live data in JSON format about the city's transportation system.<br>The map updates on a 30 second refresh and identifies the train number and direction so users can see how far away is the next available train.",
         link: "./pages/bustracker/index.html",
         repoLink: "https://github.com/andrewbeyea/Real-Time-Bus-Tracker",
         thumbnail: "./images/bustracker.jpg",
@@ -26,7 +26,7 @@ const projectList = [
     {
         name: "Slider Puzzle",
         type: "Fun",
-        description: "A puzzle game to construct an image from shuffled tiles. Uses arrow key controls.",
+        description: "A puzzle game to construct an image from shuffled tiles. Uses arrow key controls.<br>Press the Shuffle button to begin the game. When the tiles are arrayed correctly, the game returns the number of turns taken in a dialog box.",
         link: "./pages/sliderpuzzle/index.html",
         repoLink: "https://github.com/andrewbeyea/sliderPuzzle",
         thumbnail: "./images/sliderpuzzle.jpg",
@@ -35,8 +35,28 @@ const projectList = [
 
 function fillDropdown(){
     let projectMenu = ""
-    for (i=0; i < projectList.length; i++){
-        projectMenu +=`<li><a class="dropdown-item" href="${projectList[i].link}">${projectList[i].name}</a></li>`;
+    for (i=0; i < projectListJSON.length; i++){
+        projectMenu +=`<li><a class="nav-link active" href="${projectListJSON[i].link}">${projectListJSON[i].name}</a></li>`;
     }
-    document.getElementById('dropProjects').innerHTML += projectMenu;
+    document.getElementById('dropProjects').innerHTML += projectList;
+}
+
+function fillProjects(){
+    let projectList = ""
+    for (i=0; i < projectListJSON.length; i++){
+        projectList +=`
+            <div class="content-sub-project" style="display:flex">
+            <div class="project-left" style="flex: 5">
+                <h2>${projectListJSON[i].name}</h2>
+                ${projectListJSON[i].description}
+            </div>
+            <div class="project-right">
+                <img class="project-pic" src=${projectListJSON[i].thumbnail}><br>
+                <a class="body-link" href="${projectListJSON[i].repoLink}">Browse the Repo on GitHub</a>
+            </div>                       
+            </div>
+            <br>
+        `;
+    }
+    document.getElementById('content').innerHTML += projectList;
 }
