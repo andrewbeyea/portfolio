@@ -24,6 +24,14 @@ const projectListJSON = [
         thumbnail: "./images/bustracker.jpg",
     },
     {
+        name: "Formik Form",
+        type: "Course",
+        description: "Form validation demonstration using Formik toolchain. Requires email and user name to include symbols @ and . Shows error data on each line for any errors in the data provided.",
+        link: "./pages/formik-form/index.html",
+        repoLink: "https://github.com/andrewbeyea/formik-form",
+        thumbnail: "./images/formik-form.jpg",
+    },
+    {
         name: "Slider Puzzle",
         type: "Fun",
         description: "A puzzle game to construct an image from shuffled tiles. Uses arrow key controls.<br>Press the Shuffle button to begin the game. When the tiles are arrayed correctly, the game returns the number of turns taken in a dialog box.",
