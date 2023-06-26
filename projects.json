@@ -31,4 +31,12 @@
         repoLink: "https://github.com/andrewbeyea/sliderPuzzle",
         thumbnail: "./images/sliderpuzzle.jpg",
     },
+        {
+        name: "Formik Form",
+        type: "Course",
+        description: "Form validation demonstration using Formik toolchain. Requires email and user name to include symbols @ and . Shows error data on each line for any errors in the data provided.",
+        link: "./pages/formik-form/index.html",
+        repoLink: "https://github.com/andrewbeyea/formik-form",
+        thumbnail: "./images/formik-form.jpg",
+    },
 ]
