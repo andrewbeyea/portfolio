@@ -30,7 +30,7 @@ const projectListJSON = [
         link: "./pages/hanoi/index.html",
         repoLink: "https://github.com/andrewbeyea/hanoi",
         thumbnail: "./images/hanoi.jpg",
-    }
+    },
     {
         name: "Formik Form",
         type: "Course",
