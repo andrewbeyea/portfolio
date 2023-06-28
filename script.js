@@ -24,6 +24,14 @@ const projectListJSON = [
         thumbnail: "./images/bustracker.jpg",
     },
     {
+        name: "Towers of Hanoi",
+        type: "Course",
+        description: "Recursive programming demo to solve the classic Towers of Hanoi problem. Moves n'rings' from tower 1 to tower 3 and provides step-by-step logging of the actions taken.",
+        link: "./pages/hanoi/index.html",
+        repoLink: "https://github.com/andrewbeyea/hanoi",
+        thumbnail: "./images/hanoi.jpg",
+    }
+    {
         name: "Formik Form",
         type: "Course",
         description: "Form validation demonstration using Formik toolchain. Requires email and user name to include symbols @ and . Shows error data on each line for any errors in the data provided.",
