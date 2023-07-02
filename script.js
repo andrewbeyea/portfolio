@@ -47,6 +47,16 @@ const projectListJSON = [
         repoLink: "https://github.com/andrewbeyea/sliderPuzzle",
         thumbnail: "./images/sliderpuzzle.jpg",
     },
+    {
+        name: "To-Do List",
+        type: "Course",
+        description: "React form for a to-do list. <br>
+        Lines can be added by pressing enter after typing in the text box. <br>
+        Lines can be removed by clicking on the item.",
+        link: "./pages/todo-list/index.html",
+        repoLink: "https://github.com/andrewbeyea/todo-list",
+        thumbnail: "./images/todo-list.jpg",
+    },
 ]
 
 function fillProjects(){
