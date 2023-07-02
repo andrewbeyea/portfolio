@@ -38,15 +38,7 @@ const projectListJSON = [
         link: "./pages/formik-form/index.html",
         repoLink: "https://github.com/andrewbeyea/formik-form",
         thumbnail: "./images/formik-form.jpg",
-    },
-    {
-        name: "Slider Puzzle",
-        type: "Fun",
-        description: "A puzzle game to construct an image from shuffled tiles. Uses arrow key controls.<br>Press the Shuffle button to begin the game. When the tiles are arrayed correctly, the game returns the number of turns taken in a dialog box.",
-        link: "./pages/sliderpuzzle/index.html",
-        repoLink: "https://github.com/andrewbeyea/sliderPuzzle",
-        thumbnail: "./images/sliderpuzzle.jpg",
-    },
+    },    
     {
         name: "To-Do List",
         type: "Course",
@@ -56,6 +48,14 @@ const projectListJSON = [
         link: "./pages/todo-list/index.html",
         repoLink: "https://github.com/andrewbeyea/todo-list",
         thumbnail: "./images/todo-list.jpg",
+    },
+    {
+        name: "Slider Puzzle",
+        type: "Fun",
+        description: "A puzzle game to construct an image from shuffled tiles. Uses arrow key controls.<br>Press the Shuffle button to begin the game. When the tiles are arrayed correctly, the game returns the number of turns taken in a dialog box.",
+        link: "./pages/sliderpuzzle/index.html",
+        repoLink: "https://github.com/andrewbeyea/sliderPuzzle",
+        thumbnail: "./images/sliderpuzzle.jpg",
     },
 ]
 
