@@ -54,7 +54,7 @@ const projectListJSON = [
         link: "./pages/sliderpuzzle/index.html",
         repoLink: "https://github.com/andrewbeyea/sliderPuzzle",
         thumbnail: "./images/sliderpuzzle.jpg",
-    },
+    }
 ]
 
 function fillProjects(){
